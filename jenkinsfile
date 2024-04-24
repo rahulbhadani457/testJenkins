@@ -1,5 +1,12 @@
 node{
+    stage('SCM'){
+        git branch:'${branch}',url:'https://github.com/rahulbhadani457/testJenkins.git'
+        println("hello SCM")
+    }
     stage('build'){
+        steps{
+            sh python abc.py
+        }
         println("hello")
     }
     stage('Test'){
