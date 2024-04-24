@@ -4,9 +4,9 @@ node{
         println("hello SCM")
     }
     stage('build'){
-        steps{
-            sh python abc.py
-        }
+      
+        sh python abc.py
+        
         println("hello")
     }
     stage('Test'){
