@@ -5,7 +5,7 @@ node{
     }
     stage('build'){
       
-        sh 'c:/Users/I316133/AppData/Local/Programs/Python/Python37/python.exe abc.py'
+        bat 'c:/Users/I316133/AppData/Local/Programs/Python/Python37/python.exe abc.py'
         
         println("hello")
     }
