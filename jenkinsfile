@@ -1,9 +1,9 @@
 node{
     stage('build'){
-        prnitln("hello")
+        println("hello")
     }
     stage('Test'){
-        prnitln("test2")
+        println("test2")
     }
 
 }
