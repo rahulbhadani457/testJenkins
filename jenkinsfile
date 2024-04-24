@@ -1,0 +1,9 @@
+node{
+    stage('build'){
+        prnitln("hello")
+    }
+    stage('Test'){
+        prnitln("test2")
+    }
+
+}
