@@ -1,4 +1,4 @@
-@Library('testLib@newfeature') _
+@Library('testLib') _
 node{
     stage('SCM'){
         git branch:'${branch}',url:'https://github.com/rahulbhadani457/testJenkins.git'
