@@ -1,9 +1,21 @@
+@Library('testLib@newfeature') _
 node{
+    stage('SCM'){
+        git branch:'${branch}',url:'https://github.com/rahulbhadani457/testJenkins.git'
+        println("hello SCM")
+    }
     stage('build'){
+      
+        bat '"C:/Program Files/Python312/python.exe" abc.py'
+        
         println("hello")
+        hello()
     }
     stage('Test'){
         println("test2")
+    }
+    stage('deploy'){
+        println("hello deploy")
     }
 
 }
